@@ -3,6 +3,8 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'vite-rust',
+  base: process.env.GITHUB_PAGES
+    ? "vite-rust"
+    : "./",
   plugins: [react()],
 });
