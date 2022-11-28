@@ -1,3 +1,6 @@
+mod algo;
+
 fn main() {
-    println!("Hello, world!");
+    let msg = algo::get_number();
+    println!("{}", msg);
 }
