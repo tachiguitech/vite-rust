@@ -1,15 +1,17 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
+* @param {number} max
 * @returns {number}
 */
-export function get_number(): number;
+export function get_random_number(max: number): number;
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
-  readonly get_number: () => number;
+  readonly get_random_number: (a: number) => number;
+  readonly __wbindgen_exn_store: (a: number) => void;
 }
 
 export type SyncInitInput = BufferSource | WebAssembly.Module;
