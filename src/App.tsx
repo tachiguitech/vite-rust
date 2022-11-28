@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import init, { get_number as getNumber } from "@tchgui/rust";
+import init, { get_random_number as getRandomNumber } from "@tchgui/rust";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
@@ -17,11 +17,11 @@ function App() {
       <button
         type="button"
         onClick={() => {
-          const n = getNumber();
+          const n = getRandomNumber(100);
           setNumber(n);
         }}
       >
-        set number from rust!
+        Set number from Rust !
       </button>
       <div>
         <a href="https://vitejs.dev" target="_blank">
