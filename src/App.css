@@ -35,3 +35,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.exponent {
+	font-size: 60%;
+	vertical-align: super;
+}
