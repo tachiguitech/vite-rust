@@ -1,6 +1,6 @@
 mod algo;
 
 fn main() {
-    let msg = algo::get_ramdom_number(100);
-    println!("{}", msg);
+    let n = algo::get_ramdom_number(100);
+    println!("{:?}", algo::calc_factors(n));
 }

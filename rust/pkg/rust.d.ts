@@ -5,12 +5,20 @@
 * @returns {number}
 */
 export function get_random_number(max: number): number;
+/**
+* @param {number} number
+* @returns {Uint32Array}
+*/
+export function calc_factors(number: number): Uint32Array;
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
   readonly get_random_number: (a: number) => number;
+  readonly calc_factors: (a: number, b: number) => void;
+  readonly __wbindgen_add_to_stack_pointer: (a: number) => number;
+  readonly __wbindgen_free: (a: number, b: number) => void;
   readonly __wbindgen_exn_store: (a: number) => void;
 }
 
