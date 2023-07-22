@@ -8,5 +8,7 @@
   ],
   "module": "rust.js",
   "types": "rust.d.ts",
-  "sideEffects": false
+  "sideEffects": [
+    "./snippets/*"
+  ]
 }

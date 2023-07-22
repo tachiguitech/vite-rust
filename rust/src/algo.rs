@@ -10,7 +10,7 @@ pub fn calc_factors(number: u32) -> HashMap<u32, u32> {
 
     let max = (number as f32).sqrt() as u32;
     let mut map: HashMap<u32, u32> = HashMap::new();
-    for fact in 2..max {
+    for fact in 2..=max {
         let mut n: u32 = 0;
         while current_number % fact == 0 {
             current_number /= fact;
